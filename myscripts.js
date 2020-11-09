@@ -26,23 +26,42 @@
 // }
 
 //[Thuc hanh] Luyen tap voi cau truc If else if
-document.getElementById("btnLogin").addEventListener("click",authoriseUser);
+// document.getElementById("btnLogin").addEventListener("click",authoriseUser);
 
-function authoriseUser() {
-      let userName = document.getElementById("userName").value;
-      let password = document.getElementById("password").value;
-      if (userName == "Admin") {
-            if (password == "TheMaster") {
-                  alert("Welcome");
-            } else if (password == "null") {
-                  alert("Canceled");
-            } else {
-                  alert("Wrong password");
-            }
-      } else if (userName == "null") {
-            alert("Canceld");
-      } else {
-            alert("I don’t know you");
-      }
+// function authoriseUser() {
+//       let userName = document.getElementById("userName").value;
+//       let password = document.getElementById("password").value;
+//       if (userName == "Admin") {
+//             if (password == "TheMaster") {
+//                   alert("Welcome");
+//             } else if (password == "null") {
+//                   alert("Canceled");
+//             } else {
+//                   alert("Wrong password");
+//             }
+//       } else if (userName == "null") {
+//             alert("Canceld");
+//       } else {
+//             alert("I don’t know you");
+//       }
             
-      }
+//       }
+
+//[Thuc hanh] Luyen tap voi cau truc switch - case
+//Bai 1
+let browser = prompt("Input your browser:");
+switch (browser) {
+      case "Edge":
+            alert("You've got the Edge!");
+            break;
+      case "Chrome":
+      case "Firefox":
+      case "Safari":
+      case "Opera":
+            alert("Okay we support these browsers too");
+            break;
+      default:
+            alert("We hope that this page looks ok!")
+            break;
+}
+
