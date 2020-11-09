@@ -49,19 +49,31 @@
 
 //[Thuc hanh] Luyen tap voi cau truc switch - case
 //Bai 1
-let browser = prompt("Input your browser:");
-switch (browser) {
-      case "Edge":
-            alert("You've got the Edge!");
+// let browser = prompt("Input your browser:");
+// switch (browser) {
+//       case "Edge":
+//             alert("You've got the Edge!");
+//             break;
+//       case "Chrome":
+//       case "Firefox":
+//       case "Safari":
+//       case "Opera":
+//             alert("Okay we support these browsers too");
+//             break;
+//       default:
+//             alert("We hope that this page looks ok!")
+//             break;
+// }
+//Bài 2
+let a = parseInt(prompt("Nhập vào số a",0));
+switch (a) {
+      case 0:
+            alert("0");
             break;
-      case "Chrome":
-      case "Firefox":
-      case "Safari":
-      case "Opera":
-            alert("Okay we support these browsers too");
+      case 1:
+            alert("1");
             break;
-      default:
-            alert("We hope that this page looks ok!")
-            break;
+      case 2:
+      case 3:
+            alert("2,3");
 }
-
