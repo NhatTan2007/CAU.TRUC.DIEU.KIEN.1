@@ -18,9 +18,31 @@
 // }
 
 //[Thuc hanh] Luyen tap voi cau truc if/else
-let theAnswer = prompt("What is the “official” name of JavaScript?");
-if (theAnswer == "ECMAScript") {
-      alert("Right!");
-} else {
-      alert("Didn’t know? ECMAScript!");
-}
+// let theAnswer = prompt("What is the “official” name of JavaScript?");
+// if (theAnswer == "ECMAScript") {
+//       alert("Right!");
+// } else {
+//       alert("Didn’t know? ECMAScript!");
+// }
+
+//[Thuc hanh] Luyen tap voi cau truc If else if
+document.getElementById("btnLogin").addEventListener("click",authoriseUser);
+
+function authoriseUser() {
+      let userName = document.getElementById("userName").value;
+      let password = document.getElementById("password").value;
+      if (userName == "Admin") {
+            if (password == "TheMaster") {
+                  alert("Welcome");
+            } else if (password == "null") {
+                  alert("Canceled");
+            } else {
+                  alert("Wrong password");
+            }
+      } else if (userName == "null") {
+            alert("Canceld");
+      } else {
+            alert("I don’t know you");
+      }
+            
+      }
